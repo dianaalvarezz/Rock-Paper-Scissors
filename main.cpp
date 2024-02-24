@@ -7,18 +7,32 @@
 int main()
 {
     std::string choice;
-    int rock, paper, scissors;
-
-    rock = 1;
-    paper = 2;
-    scissors = 3;
-
-
+   
     std::cout<<"Pick: Rock Paper or Scissors" << std::endl;
     std::cin >> choice;
 
     srand(time(NULL));
     int computerchoice = rand() % 3 + 1;
+
+    int choice;
+    if (choice == "rock")
+    {
+        choice = 1;
+    }
+    else if (choice == "paper")
+    {
+        choice = 2;
+    }
+    else if (choice == "scissors")
+    {
+        choice = 3;
+    }
+    else
+    {
+        std::cout << "No try again" << std::endl;
+        return 1;
+    }
+
 
     if (choice == 1 && computerchoice == 1)
     {
