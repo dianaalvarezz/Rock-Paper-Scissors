@@ -18,15 +18,15 @@ int main()
     for (auto &c : choice) c = std::tolower(c);
 
     int choiceConverted;
-    if (choiceConverted == "rock")
+    if (choice == "rock")
     {
         choiceConverted = 1;
     }
-    else if (choiceConverted == "paper")
+    else if (choice == "paper")
     {
         choiceConverted = 2;
     }
-    else if (choiceConverted == "scissors")
+    else if (choice == "scissors")
     {
         choiceConverted = 3;
     }
@@ -69,7 +69,7 @@ int main()
     {
         std::cout << "Scissors cut paper, you win" << std::endl;
     }
-    else if (choiceConverted == 3 && computerchocie == 3)
+    else if (choiceConverted == 3 && computerchoice == 3)
     {
         std::cout << "You Tied" << std::endl;
     }
